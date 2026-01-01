@@ -3,32 +3,53 @@
   <head>
     <title>taberna</title>
     <style>
-    @font-face {
-      font-family: 'Johnston ITC Std';
-      font-weight: normal;
-      font-style: normal;
-    }
-    .header {
-        background-color: #dadada;
-        height: 20%;
-  		width: 100%;
+      .header {
+        padding: 8px 16px;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav h1 {
+        margin: 0;
+        flex: 2;
+      }
+      .nav-item {
+        flex: 1;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+      }
+      .nav-item a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .nav-item a:hover {
+        text-decoration: underline;
       }
       body {
-      	font-family: 'Johnston ITC Std', sans serif
+      	background-color: black;
+        color: white;
+        line-height: 1.75;
+        font-family: Courier;
+      }
+      a {
+      	color: #00cc00;
       }
     </style>
   </head>
   <body>
   	<div class="header" style="padding: 0.5px 0.5px 0.5px 0.5px">
-    	<table style="width:100%">
-        	<tr>
-            	<td style="width: 40%"><h1>Title</h1></td>
-                <td style="width: 20%">tab1</td>
-                <td style="width: 20%">tab2</td>
-                <td style="width: 20%">tab3</td>
-            </tr>
-        </table>
+    	<div class="nav">
+        <h1><i>taberna</i></h1>
+        <div class="nav-item"><a href="#">About</a></div>
+        <div class="nav-item"><a href="#">Archive</a></div>
+        <div class="nav-item"><a href="#">Extra Content</a></div>
+      </div>
     </div>
-    <p>Hello! This site will be later used to post extra content and copies of Latin newspapers.</p>
+    <p><i>taberna</i> is a four-page cheatsheet releasing every two weeks - on the Kalends (1st of the month) and the Ides (13th/15th of the month) or immediately after. Should those dates fall on a date when school is not in session, they will be released on the next possible day on this website.</p>
+    <p>Only one person is working and authoring this website and each pamphlet, so direct all concerns towards the following Google form <a href="https://tinyurl.com/feedingback">here</a>.</p>
+    <p>The next issue is going to be released 13 January 2026, if authorised and finalised on time. It will most likely cover first and second declensions, etymology, cases, numbers, and a brief history of the Roman monarchy.</p>
   </body>
 </html>
