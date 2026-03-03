@@ -39,13 +39,6 @@
     <p>This website is still under renovation. There will be a few problems. If you do find any, direct all concerns to me by Email or by Form.</p>
     <button class="btn btn-dark" onclick="dismissDialog()">Okay!</button>
   </div>
-  <div class="dialog-box" id="dialog1">
-    <h2>Notice</h2>
-    <p>This site does not use cookies, because it does not directly gather any information on you. Is there really any difference in picking a button?</p>
-    <button class="btn btn-primary" onclick="dismissDialog1()">Accept all</button>
-    <button class="btn btn-secondary" onclick="dismissDialog1()">Accept necessary only</button>
-    <button class="btn btn-danger" onclick="dismissDialog1()">Do not accept</button>
-  </div>
   <div class="content">
     <h1>Primordia</h1>
     <p><i>primordia</i> is a four-page (mostly) pamphlet releasing roughly every two weeks - on the Kalends (1st of the month) and the Ides (13th/15th of the month) or immediately after. Should those dates fall on a date when school is not in session, they will be released on the next possible day on this website.</p>
@@ -63,15 +56,6 @@
 
     function dismissDialog() {
       dialog.classList.remove('show');
-    }
-    const dialog1 = document.getElementById('dialog1');
-
-    setTimeout(() => {
-      dialog1.classList.add('show');
-    }, 1500);
-
-    function dismissDialog1() {
-      dialog1.classList.remove('show');
     }
   </script>
 </body>
