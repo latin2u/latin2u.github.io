@@ -6,6 +6,9 @@
 		<title>Primordia</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 		<style>
+			html {
+			  scroll-behavior: smooth;
+			}
 			body {
 				margin: 15%;
 				background-color: black;
@@ -14,23 +17,16 @@
 				justify-content: center;
 				align-items: center;
 			}
-			.dialog-box {
-				position: fixed;
-				background-color: grey;
-				color: white;
-				padding: 2.5rem;
-				border-radius: 10px;
-				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-				max-width: 75%;
-				height: 75%;
-				transform: translateY(-100vh);
-				opacity: 0;
-				transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-			}
-			.dialog-box.show {
-				transform: translateY(0);
-				opacity: 1;
-			}
+			a {
+              color: #cfcfcf;
+              text-decoration: none;
+              transition: 0.3s;
+            }
+
+            a:hover {
+              color: white;
+              text-shadow: 0 0 8px rgba(255,255,255,0.6);
+            }
 			td {
 				border: 1px solid white; 
 				padding: 4px 8px;
@@ -40,13 +36,27 @@
 	
 	<body>
 		<div class="content">
-			<p><a href="https://latin2u.github.io">Back to main page.</a>
-			<h1>Content Covered</h1>
-			<small>Last updated 21 March 2026</small>
+			<p><a href="https://latin2u.github.io">Navigate back to main page.</a>
+			<h1>Lists: Content | Quizzes | Vocabulary</h1>
+				<ul>
+				  <li><a href="#content">Content Covered</a></li>
+				  <li><a href="#quizzes">Quizzes</a></li>
+				  <li><a href="#vocabulary">Vocabulary Lists</a></li>
+				</ul> 
+			<h2 id="content">Content Covered</h2>
+			<small>Last updated 1 April 2026</small>
 			<table style="width:100%; border:1px solid white;">
 				<tr>
 					<td>Topic</td>
 					<td>Issue Covered</td>
+				</tr>
+				<tr>
+					<td><h3>Charts</h3></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><h5>Nouns</h5></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td>Nouns - 1st Declension</td>
@@ -69,20 +79,20 @@
 					<td>3</td>
 				</tr>
 				<tr>
-					<td>Adjectives</td>
+					<td><h5>Adjectives</h5></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Adjectives - Positive, Comparative, Superlative</td>
 					<td>4</td>
 				</tr>
 				<tr>
-					<td>Adverbs</td>
+					<td>Adverbs - Positive, Comparative, Superlative</td>
 					<td>5</td>
 				</tr>
 				<tr>
-					<td>Irregular Verbs (sum, edo, eo, volo, possum) - Active, Imperfect, and Perfect</td>
-					<td>4</td>
-				</tr>
-				<tr>
-					<td>Grammar - Functions (Introduction)</td>
-					<td>2</td>
+					<td><h5>Verbs</h5></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td>Verbs - Conjugations (1st, 2nd, 3rd, 4th)</td>
@@ -105,16 +115,36 @@
 					<td>3</td>
 				</tr>
 				<tr>
-					<td>Pronouns - Introduction</td>
+					<td>Irregular Verbs (sum, edo, eo, volo, possum) - Active, Imperfect, and Perfect</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td><h5>Pronouns, et al.</h5></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Pronouns - Introduction (Part I)</td>
 					<td>3</td>
 				</tr>
 				<tr>
-					<td>Sentences</td>
+					<td><h3>Grammar</h3></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Grammar - Functions (Introduction)</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Grammar - Noun-Adjective Agreement</td>
 					<td>5</td>
 				</tr>
 				<tr>
-					<td>Noun-Adjective Agreement</td>
+					<td>Translating Sentences</td>
 					<td>5</td>
+				</tr>
+				<tr>
+					<td><h3>Culture and Civilisation</h3></td>
+					<td></td>
 				</tr>
 				<tr>
 					<td>Civilisation - Calendar</td>
@@ -125,19 +155,19 @@
 					<td>1</td>
 				</tr>
 				<tr>
-					<td>Civilisation - Cardinal Numerals</td>
-					<td>3</td>
+					<td>History - The Republic</td>
+					<td>1</td>
 				</tr>
 				<tr>
 					<td>Civilisation - February Holidays</td>
 					<td>2</td>
 				</tr>
 				<tr>
-					<td>History - The Republic</td>
-					<td>1</td>
+					<td>Civilisation - Cardinal Numerals</td>
+					<td>3</td>
 				</tr>
 		    </table>
-			<h1>Quizzes and Questions</h1>
+			<h2 id="quizzes">Quizzes and Questions</h2>
 			<small>Last updated 21 March 2026</small>
 			<table style="width:100%; border:1px solid white;">
 				<tr>
@@ -159,7 +189,7 @@
 					<td>5</td>
 				</tr>
 		    </table>
-			<h1>Word Lists</h1>
+			<h2 id="vocabulary">Word Lists</h2>
 			<small>Last updated 31 March 2026</small>
 			<table style="width:100%; border:1px solid white;">
 				<tr>
@@ -168,7 +198,7 @@
 		    	    <td>Pamphlet #</td>
 				</tr>
 				<tr>
-					<td>1</td>
+					<td>1: Animals</td>
 					<td>33</td>
 					<td>5</td>
 				</tr>
